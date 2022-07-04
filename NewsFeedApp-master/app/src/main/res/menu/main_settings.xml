@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+  <item android:id="@+id/save"
+      android:title="save"
+      app:showAsAction="always"
+      android:icon="@drawable/ic_save">
+  </item>
+  <item android:id="@+id/title_size"
+      android:title="title_size"
+      app:showAsAction="never"
+      android:icon="@drawable/ic_text">
+    <menu>
+      <item android:id="@+id/increase_text"
+          android:title="increas"
+          app:showAsAction="always"
+          android:icon="@drawable/ic_increas">
+      </item>
+      <item  android:id="@+id/decrease_text"
+          android:title="decrease"
+          app:showAsAction="always"
+          android:icon="@drawable/ic_decrease">
+      </item>
+    </menu>
+  </item>
+  <item android:id="@+id/annotation_size"
+      android:title="annotation_size"
+      app:showAsAction="never"
+      android:icon="@drawable/ic_text">
+    <menu>
+      <item android:id="@+id/increase_text_annotation"
+          android:title="increase_text_annotation"
+          app:showAsAction="always"
+          android:icon="@drawable/ic_increas">
+      </item>
+      <item  android:id="@+id/decrease_text_annotation"
+          android:title="decrease_text_annotation"
+          app:showAsAction="always"
+          android:icon="@drawable/ic_decrease">
+      </item>
+    </menu>
+  </item>
+
+  <item
+      android:title="color of button"
+      android:id="@+id/color_button"
+      android:icon="@drawable/ic_color"
+      app:showAsAction="never"
+      android:orderInCategory="3">
+    <menu>
+
+      <item android:title="red"
+          android:id="@+id/red_button"
+      />
+      <item android:id="@+id/blue_button"
+          android:title="blue"
+      />
+      <item android:id="@+id/yellow_button"
+          android:title="yellow"
+      />
+      <item android:id="@+id/gray_button"
+          android:title="gray"
+      />
+      <item android:id="@+id/green_button"
+          android:title="green"
+      />
+    </menu>
+  </item>
+  <item
+      android:title="color of background"
+      android:id="@+id/color_background"
+      android:icon="@drawable/ic_color"
+      app:showAsAction="never"
+      android:orderInCategory="7">
+  <menu>
+
+    <item android:title="red"
+        android:id="@+id/red_background"
+
+        />
+    <item android:id="@+id/blue_background"
+        android:title="blue"
+        />
+    <item android:id="@+id/white_background"
+        android:title="white"
+    />
+    <item android:id="@+id/yellow_background"
+        android:title="yellow"
+        />
+    <item android:id="@+id/gray_background"
+        android:title="gray"
+        />
+    <item android:id="@+id/green_background"
+        android:title="green"
+        />
+  </menu>
+  </item>
+  <item
+      android:title="color text annotation"
+      android:id="@+id/color_text_annotation"
+      android:icon="@drawable/ic_color"
+      app:showAsAction="never"
+      android:orderInCategory="4">
+    <menu>
+
+      <item android:title="red"
+          android:id="@+id/red_text_annotation"
+
+          />
+      <item android:id="@+id/blue_text_annotation"
+          android:title="blue"
+          />
+      <item android:id="@+id/white_text_annotation"
+          android:title="white"
+          />
+      <item android:id="@+id/yellow_text_annotation"
+          android:title="yellow"
+          />
+      <item android:id="@+id/gray_text_annotation"
+          android:title="gray"
+          />
+      <item android:id="@+id/green_text_annotation"
+          android:title="green"
+          />
+    </menu>
+  </item>
+  <item
+      android:title="color text title"
+      android:id="@+id/color_text_title"
+      android:icon="@drawable/ic_color"
+      app:showAsAction="never"
+      android:orderInCategory="3">
+    <menu>
+
+      <item android:title="red"
+          android:id="@+id/red_text_title"
+
+          />
+      <item android:id="@+id/blue_text_title"
+          android:title="blue"
+          />
+      <item android:id="@+id/white_text_title"
+          android:title="white"
+          />
+      <item android:id="@+id/yellow_text_title"
+          android:title="yellow"
+          />
+      <item android:id="@+id/gray_text_title"
+          android:title="gray"
+          />
+      <item android:id="@+id/green_text_title"
+          android:title="green"
+          />
+    </menu>
+  </item>
+  <item
+      android:title="color bar"
+      android:id="@+id/color_bar"
+      android:icon="@drawable/ic_color"
+      app:showAsAction="never"
+      android:orderInCategory="5">
+    <menu>
+
+      <item android:title="red"
+          android:id="@+id/red_bar"
+
+          />
+      <item android:id="@+id/blue_bar"
+          android:title="blue"
+          />
+      <item android:id="@+id/white_bar"
+          android:title="white"
+          />
+      <item android:id="@+id/yellow_bar"
+          android:title="yellow"
+          />
+      <item android:id="@+id/gray_bar"
+          android:title="gray"
+          />
+      <item android:id="@+id/green_bar"
+          android:title="green"
+          />
+    </menu>
+  </item>
+  <item
+      android:title="color line"
+      android:id="@+id/color_line"
+      android:icon="@drawable/ic_color"
+      app:showAsAction="never"
+      android:orderInCategory="3">
+    <menu>
+
+      <item android:title="red"
+          android:id="@+id/red_line"
+
+          />
+      <item android:id="@+id/blue_line"
+          android:title="blue"
+          />
+      <item android:id="@+id/white_line"
+          android:title="white"
+          />
+      <item android:id="@+id/yellow_line"
+          android:title="yellow"
+          />
+      <item android:id="@+id/gray_line"
+          android:title="gray"
+          />
+      <item android:id="@+id/green_line"
+          android:title="green"
+          />
+    </menu>
+  </item>
+</menu>
