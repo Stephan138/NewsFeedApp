@@ -6,9 +6,12 @@
         <entry key="..\:/NewsFeedApp-master/app/src/main/res/drawable/ic_baseline_text_fields_24.xml" value="0.2015" />
         <entry key="..\:/NewsFeedApp-master/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2015" />
         <entry key="..\:/NewsFeedApp-master/app/src/main/res/layout/activity_browser.xml" value="0.22" />
-        <entry key="..\:/NewsFeedApp-master/app/src/main/res/layout/activity_main.xml" value="0.19375" />
-        <entry key="..\:/NewsFeedApp-master/app/src/main/res/layout/item_news.xml" value="0.1" />
-        <entry key="..\:/NewsFeedApp-master/app/src/main/res/menu/main_settings.xml" value="0.19375" />
+        <entry key="..\:/NewsFeedApp-master/app/src/main/res/layout/activity_main.xml" value="0.13372335979941496" />
+        <entry key="..\:/NewsFeedApp-master/app/src/main/res/layout/item_news.xml" value="0.18" />
+        <entry key="..\:/NewsFeedApp-master/app/src/main/res/layout/spin_item.xml" value="0.13632246376811594" />
+        <entry key="..\:/NewsFeedApp-master/app/src/main/res/menu/browser_settings.xml" value="0.2701561840439004" />
+        <entry key="..\:/NewsFeedApp-master/app/src/main/res/menu/main_settings.xml" value="0.2" />
+        <entry key="..\:/NewsFeedApp-master/app/src/main/res/menu/spin_item.xml" value="0.175" />
         <entry key="..\:/NewsFeedApp-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1935" />
         <entry key="..\:/NewsFeedApp-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1935" />
         <entry key="..\:/Pract/NewsFeedApp/app/src/main/res/drawable-v24/ic_refresh_blue.xml" value="0.1115" />

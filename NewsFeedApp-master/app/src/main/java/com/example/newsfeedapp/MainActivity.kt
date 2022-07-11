@@ -15,21 +15,25 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.newsfeedapp.model.News
 import com.example.newsfeedapp.model.QueryResult
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_main.view.*
 import kotlinx.android.synthetic.main.item_news.*
+import kotlinx.android.synthetic.main.item_news.view.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import android.content.pm.ActivityInfo
+import androidx.core.view.forEach
 
 
 @Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
-    lateinit var color: Color
     private var ourFontSize = 14f
     private lateinit var newsAdapter: NewsAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 
         initRecyclerView(this)
         // Обработчик нажатия на FloatingActionButton
@@ -62,11 +66,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
 
         menuInflater.inflate(R.menu.main_settings, menu)
+
         return true
     }
 
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
         when(item.itemId){
 
             // set color of line between two news
@@ -78,6 +84,7 @@ class MainActivity : AppCompatActivity() {
                 mainLayout.setBackgroundResource(R.color.green)
                 return true
             }
+
             R.id.yellow_line -> {
                 mainLayout.setBackgroundColor(Color.YELLOW)
                 return true
@@ -213,14 +220,6 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.red_bar -> {
                 supportActionBar!!.setBackgroundDrawable(ColorDrawable(getColor(android.R.color.holo_red_dark)))
-            }
-
-            // save settings
-            R.id.save -> {
-
-
-
-
             }
         }
         return true

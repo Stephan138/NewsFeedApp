@@ -1,5 +1,6 @@
 package com.example.newsfeedapp
 
+import android.content.pm.ActivityInfo
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Build
@@ -21,6 +22,8 @@ class BrowserActivity : AppCompatActivity() {
     private var ourFontSize = 14f
     override fun onCreate(savedInstanceState: Bundle?) {
 
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_browser)
 
@@ -32,12 +35,13 @@ class BrowserActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
 
-        menuInflater.inflate(R.menu.main_settings, menu)
+        menuInflater.inflate(R.menu.browser_settings, menu)
         return true
     }
 
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) finish()
         when(item.itemId){
 
             // increase decrease text on browser

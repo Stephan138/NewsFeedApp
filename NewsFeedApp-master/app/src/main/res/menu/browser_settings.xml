@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="color of background"
+        android:id="@+id/color_background"
+        android:icon="@drawable/ic_color"
+        app:showAsAction="never"
+        android:orderInCategory="7">
+        <menu>
+
+            <item android:title="red"
+                android:id="@+id/red_background"
+
+                />
+            <item android:id="@+id/blue_background"
+                android:title="blue"
+                />
+            <item android:id="@+id/white_background"
+                android:title="white"
+                />
+            <item android:id="@+id/yellow_background"
+                android:title="yellow"
+                />
+            <item android:id="@+id/gray_background"
+                android:title="gray"
+                />
+            <item android:id="@+id/green_background"
+                android:title="green"
+                />
+        </menu>
+    </item>
+    <item
+        android:title="color bar"
+        android:id="@+id/color_bar"
+        android:icon="@drawable/ic_color"
+        app:showAsAction="never"
+        android:orderInCategory="5">
+        <menu>
+
+            <item android:title="red"
+                android:id="@+id/red_bar"
+
+                />
+            <item android:id="@+id/blue_bar"
+                android:title="blue"
+                />
+            <item android:id="@+id/white_bar"
+                android:title="white"
+                />
+            <item android:id="@+id/yellow_bar"
+                android:title="yellow"
+                />
+            <item android:id="@+id/gray_bar"
+                android:title="gray"
+                />
+            <item android:id="@+id/green_bar"
+                android:title="green"
+                />
+        </menu>
+    </item>
+</menu>

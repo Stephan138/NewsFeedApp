@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+>
 
-
-  <item android:id="@+id/save"
-      android:title="save"
-      app:showAsAction="always"
-      android:icon="@drawable/ic_save">
-  </item>
   <item android:id="@+id/title_size"
+      
       android:title="title_size"
       app:showAsAction="never"
       android:icon="@drawable/ic_text">
+
     <menu>
       <item android:id="@+id/increase_text"
-          android:title="increas"
+          android:title="increase"
           app:showAsAction="always"
           android:icon="@drawable/ic_increas">
       </item>
@@ -43,6 +40,7 @@
     </menu>
   </item>
 
+  <!--
   <item
       android:title="color of button"
       android:id="@+id/color_button"
@@ -68,6 +66,7 @@
       />
     </menu>
   </item>
+  -->
   <item
       android:title="color of background"
       android:id="@+id/color_background"
