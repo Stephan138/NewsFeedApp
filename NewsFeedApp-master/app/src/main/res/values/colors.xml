@@ -9,11 +9,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="pink">#E91E63</color>
     <color name="yellow">#FFC107</color>
-
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
 
     <color name="green">#0F9D58</color>
-    <color name="red">#CF1818</color>
+    <color name="red">#000000</color>
     <color name="blue">#2196F3</color>
 </resources>

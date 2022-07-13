@@ -1,5 +1,6 @@
 package com.example.newsfeedapp
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
@@ -22,6 +23,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import android.content.pm.ActivityInfo
+import android.content.res.ColorStateList
 import androidx.core.view.forEach
 
 
@@ -70,10 +72,37 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
+    @SuppressLint("ResourceAsColor")
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         when(item.itemId){
+
+            //set color of button
+            R.id.red_button -> {
+                refreshNewsButton.setBackgroundTintList(ColorStateList.valueOf(Color.RED));
+                return true
+            }
+            R.id.green_button -> {
+                refreshNewsButton.setBackgroundTintList(ColorStateList.valueOf(Color.GREEN));
+                return true
+            }
+            R.id.yellow_button -> {
+                refreshNewsButton.setBackgroundTintList(ColorStateList.valueOf(Color.YELLOW));
+                return true
+            }
+            R.id.gray_button -> {
+                refreshNewsButton.setBackgroundTintList(ColorStateList.valueOf(Color.GRAY));
+                return true
+            }
+            R.id.blue_button -> {
+                refreshNewsButton.setBackgroundTintList(ColorStateList.valueOf(Color.BLUE));
+                return true
+            }
+            R.id.white_button -> {
+                refreshNewsButton.setBackgroundTintList(ColorStateList.valueOf(Color.WHITE));
+                return true
+            }
 
             // set color of line between two news
             R.id.red_line -> {
@@ -81,10 +110,9 @@ class MainActivity : AppCompatActivity() {
                 return true
             }
             R.id.green_line -> {
-                mainLayout.setBackgroundResource(R.color.green)
+                mainLayout.setBackgroundResource(android.R.color.holo_green_dark)
                 return true
             }
-
             R.id.yellow_line -> {
                 mainLayout.setBackgroundColor(Color.YELLOW)
                 return true

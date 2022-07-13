@@ -40,7 +40,6 @@
     </menu>
   </item>
 
-  <!--
   <item
       android:title="color of button"
       android:id="@+id/color_button"
@@ -64,9 +63,11 @@
       <item android:id="@+id/green_button"
           android:title="green"
       />
+      <item android:id="@+id/white_button"
+          android:title="white"
+          />
     </menu>
   </item>
-  -->
   <item
       android:title="color of background"
       android:id="@+id/color_background"
